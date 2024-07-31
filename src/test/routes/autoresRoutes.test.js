@@ -86,7 +86,7 @@ describe('GET em /autores', () => {
       .end((err, res) => {
         expect(res.status).to.equal(404);
         expect(res.body).to.have.property('message')
-          .eql(`id ${idAutor} não encontrado`);
+          .eql(`Autor com id ${idAutor} não encontrado.`);
         done();
       });
   });
