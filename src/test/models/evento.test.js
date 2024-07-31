@@ -11,7 +11,7 @@ describe('Testando o modelo Evento', () => {
     autor_id: '1',
   };
 
-  it('Deve instanciar um novo autor', () => {
+  it('Deve instanciar um novo evento', () => {
     const evento = new Evento(objetoEvento);
 
     expect(evento).toEqual(

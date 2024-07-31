@@ -1,5 +1,6 @@
 import express from 'express';
 import livros from './livrosRoutes.js';
+import eventos from './eventosRoutes.js';
 import autores from './autoresRoutes.js';
 import editoras from './editorasRoutes.js';
 
@@ -11,6 +12,7 @@ const routes = (app) => {
   app.use(
     express.json(),
     livros,
+    eventos,
     autores,
     editoras,
   );
